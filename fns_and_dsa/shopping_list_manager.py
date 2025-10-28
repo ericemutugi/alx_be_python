@@ -1,14 +1,14 @@
 # Python script for managing a shopping list.
 
-# Loop menu to add, remove, view items, or exit.
+# Loop menu to get user input for actions.
 def display_menu():
-    print("\nShopping List Manager")
+    print(f"Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View Items")
     print("4. Exit")
 
-# Function to add an item to the shopping list, remove items, and diplay current list.
+# Function to add an items, remove items, and diplay current list of items on shopping list.
 def main():
     shopping_list = []
     while True:
