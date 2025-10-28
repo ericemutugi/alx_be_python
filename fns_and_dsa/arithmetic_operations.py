@@ -1,8 +1,7 @@
 # Python script to perform basic arithmetic operations.
 
-# Function named perform_operation that takes parameters num1 (float), num2 (float), and operation (str).
-# operation can be one of the following strings: 'add', 'subtract', 'multiply', 'divide'.
-def perform_operation(num1: float, num2: float, operation: str) -> float:
+# Function that takes parameters and perfrms math operations on them.
+def perform_operation(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':

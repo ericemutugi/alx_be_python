@@ -17,7 +17,7 @@ def convert_to_fahrenheit(celsius):
 # Get user input and output with error for invalid temperature inputs.
 def main():
     temp = float(input("Enter the temperature to convert: "))
-    scale = input("Is this in Celsius or Fahrenheit? (C/F): ").strip().upper()
+    scale = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
     if scale == "C":
         new_temp = convert_to_fahrenheit(temp)
         print(f"{temp}°C is {new_temp}°F")
