@@ -2,7 +2,7 @@
 
 # Define the BankAccount class
 class BankAccount:
-    def _init_ (self, account_balance=0):
+    def _init_(self, account_balance=0):
         self.account_balance = account_balance
 
 # Implement deposit, withdraw, and display_balance methods
@@ -18,3 +18,6 @@ class BankAccount:
         
     def display_balance(self):
         return self.account_balance
+    
+if __name__ == "__main__":
+    main()
