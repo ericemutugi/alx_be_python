@@ -2,22 +2,18 @@
 
 # Define the BankAccount class
 class BankAccount:
-    def _init_(self, account_balance=0):
-        self.account_balance = account_balance
+    def __init__(self, account_balance=0):
+        self.balance = account_balance
 
-# Implement deposit, withdraw, and display_balance methods
     def deposit(self, amount):
-        self.account_balance += amount
-
+        self.balance += amount
+        
     def withdraw(self, amount):
-        if amount <= self.account_balance:
-            self.account_balance -= amount
+        if amount <= self.balance:
+            self.balance -= amount
             return True
         else:
             return False
-        
+
     def display_balance(self):
-        return self.account_balance
-    
-if __name__ == "__main__":
-    main()
+        return self.balance
